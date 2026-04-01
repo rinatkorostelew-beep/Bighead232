@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0818">
+
+    <LinearLayout
+        android:id="@+id/layoutKey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#128272;"
+            android:textSize="48sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введи ключ активации"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Получи ключ у нашего бота в Telegram"
+            android:textColor="#66FFFFFF"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <EditText
+            android:id="@+id/etKey"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="BIGHEAD-XXXX"
+            android:textColorHint="#44FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="#1E1E2E"
+            android:inputType="textCapCharacters"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnActivate"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Активировать"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7C3AED"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnGetKey"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Получить ключ в Telegram"
+            android:textColor="#A78BFA"
+            android:backgroundTint="#1E1E2E"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <View
+                android:id="@+id/arc1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"/>
+
+            <View
+                android:id="@+id/arc2"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_centerInParent="true"/>
+
+            <View
+                android:id="@+id/arc3"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerInParent="true"/>
+
+            <View
+                android:id="@+id/coreCircle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BIGHEAD"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OVERLAY TOOL"
+            android:textColor="#44FFFFFF"
+            android:textSize="11sp"
+            android:letterSpacing="0.3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"/>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Запустить"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7C3AED"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Остановить"
+            android:textColor="#666666"
+            android:backgroundTint="#1E1E2E"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#44A78BFA"
+            android:textSize="11sp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
